@@ -1,21 +1,21 @@
-// Challenge 1 + 2
-// const markMass = 78;
-// const markHeight = 1.69;
-// const johnMass = 92;
-// const johnHeight = 1.95;
+//Challenge 1 + 2
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
 
-// const markBMI = markMass / markHeight ** 2;
-// const johnBMI = johnMass / johnHeight ** 2;
-// const markHigherBMI = markBMI > johnBMI;
-// console.log(markBMI, johnBMI, markHigherBMI);
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
+const markHigherBMI = markBMI > johnBMI;
+console.log(markBMI, johnBMI, markHigherBMI);
 
-// if (markHigherBMI) {
-//   console.log(`Mark's BMI ${markBMI} is higher than John's BMI ${johnBMI}`);
-// } else {
-//   console.log(`John's BMI ${johnBMI} is higher than Mark's BMI ${markBMI}`);
-// }
+if (markHigherBMI) {
+  console.log(`Mark's BMI ${markBMI} is higher than John's BMI ${johnBMI}`);
+} else {
+  console.log(`John's BMI ${johnBMI} is higher than Mark's BMI ${markBMI}`);
+}
 
-// Challenge 3
+//Challenge 3
 const dolphinsAverageScore = (97 + 112 + 101) / 3;
 const koalasAverageScore = (109 + 95 + 123) / 3;
 

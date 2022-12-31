@@ -1,248 +1,248 @@
-// /////////// Values and variables ///////////
-// console.log("hello World");
+/////////// Values and variables ///////////
+console.log("hello World");
 
-// let firstName = "Ahmad";
-// let lastName = "Asif";
+let firstName = "Ahmad";
+let lastName = "Asif";
 
-// console.log(firstName + " " + lastName);
+console.log(firstName + " " + lastName);
 
-// let PI = 3.14;
-// console.log(PI);
+let PI = 3.14;
+console.log(PI);
 
-// let country = "Pakistan";
-// let continent = "Asia";
-// let population = "22 Crore";
+let country = "Pakistan";
+let continent = "Asia";
+let population = "22 Crore";
 
-// console.log("Country " + country);
-// console.log("Continent " + continent);
-// console.log("Population " + population);
+console.log("Country " + country);
+console.log("Continent " + continent);
+console.log("Population " + population);
 
-// //////////// Data Types ///////////
-// let isValid = true;
-// console.log(isValid);
-// console.log(typeof isValid);
+//////////// Data Types ///////////
+let isValid = true;
+console.log(isValid);
+console.log(typeof isValid);
 
-// // primitive types
-// let number = 12;
-// let isIsland = true;
-// let floatingNumber = 12.43;
-// let year;
+// primitive types
+let number = 12;
+let isIsland = true;
+let floatingNumber = 12.43;
+let year;
 
-// console.log(typeof number);
-// console.log(typeof floatingNumber);
-// console.log(typeof year);
-// console.log(isIsland);
+console.log(typeof number);
+console.log(typeof floatingNumber);
+console.log(typeof year);
+console.log(isIsland);
 
-// isValid = "FUN!";
-// console.log(typeof isValid);
+isValid = "FUN!";
+console.log(typeof isValid);
 
-// /////////// let const and var //////////////
+/////////// let const and var //////////////
 
-// // Mutable
-// // let birthDate = 2002;
-// // birthDate = 2003;
-// // console.log(birthDate);
-
-// const birthDate = 2002;
-// // birthDate = 2003; error
+// Mutable
+// let birthDate = 2002;
+// birthDate = 2003;
 // console.log(birthDate);
 
-// // NOTE let and var are not same
-// var job = "programm";
-// job = "js developer";
-// console.log(job);
+const birthDate = 2002;
+// birthDate = 2003; error
+console.log(birthDate);
 
-// //////////// BASIC OPERATORS //////////////////
+// NOTE let and var are not same
+var job = "programm";
+job = "js developer";
+console.log(job);
 
-// let age = 2022 - 2002;
-// let age1 = 2022 - 2004;
+//////////// BASIC OPERATORS //////////////////
 
-// let number1 = 2;
-// number1++;
-// number1 *= 2;
-// number1--;
+let age = 2022 - 2002;
+let age1 = 2022 - 2004;
 
-// console.log(number1); // 5
+let number1 = 2;
+number1++;
+number1 *= 2;
+number1--;
 
-// console.log(age > age1);
-// console.log(age * 2);
-// console.log(age1 / 2);
-// console.log(2 ** 3);
+console.log(number1); // 5
 
-// let isValidAge = age1 >= 18;
-// console.log(isValidAge);
+console.log(age > age1);
+console.log(age * 2);
+console.log(age1 / 2);
+console.log(2 ** 3);
 
-// ///////////// template strings ///////////////
+let isValidAge = age1 >= 18;
+console.log(isValidAge);
 
-// const myName = "Ahmad";
-// const myJob = "programmer";
-// const currYear = 2022;
+///////////// template strings ///////////////
 
-// const ahmad =
-//   "I am, " + myName + " a " + (currYear - birthDate) + " years old " + myJob;
-// console.log(ahmad);
+const myName = "Ahmad";
+const myJob = "programmer";
+const currYear = 2022;
 
-// // using back ticks to write template literal string
-// const ahmadNew = `I am ${myName} a ${currYear - birthDate} years old ${myJob}`;
-// console.log(ahmadNew);
+const ahmad =
+  "I am, " + myName + " a " + (currYear - birthDate) + " years old " + myJob;
+console.log(ahmad);
 
-// console.log("Multiple \nlines \n");
-// console.log(`Multiple
-// lines
-// `);
+// using back ticks to write template literal string
+const ahmadNew = `I am ${myName} a ${currYear - birthDate} years old ${myJob}`;
+console.log(ahmadNew);
 
-// ////////// conditional statement //////////
+console.log("Multiple \nlines \n");
+console.log(`Multiple
+lines
+`);
 
-// const age = 12;
+////////// conditional statement //////////
 
-// if (age >= 18) {
-//   console.log("You are able to drive");
-// } else {
-//   const yearLeft = 18 - age;
-//   console.log(`You are ${yearLeft} years left to drive`);
-// }
+const age = 12;
 
-// const year = 2022;
-// let century;
+if (age >= 18) {
+  console.log("You are able to drive");
+} else {
+  const yearLeft = 18 - age;
+  console.log(`You are ${yearLeft} years left to drive`);
+}
 
-// if (year <= 2020) {
-//   century = 20;
-// } else {
-//   century = 21;
-// }
+const year = 2022;
+let century;
 
-// console.log(`You are in ${century} century`);
+if (year <= 2020) {
+  century = 20;
+} else {
+  century = 21;
+}
 
-// //////////////// Type Conversion and Coercion /////////////
+console.log(`You are in ${century} century`);
 
-// // type conversion
-// const inputYear = "1991";
-// console.log(Number(inputYear));
-// console.log(inputYear + 12);
+//////////////// Type Conversion and Coercion /////////////
 
-// console.log(Number("Ahmad"));
-// console.log(typeof NaN);
+// type conversion
+const inputYear = "1991";
+console.log(Number(inputYear));
+console.log(inputYear + 12);
 
-// console.log(String(23), 23);
+console.log(Number("Ahmad"));
+console.log(typeof NaN);
 
-// // type coercion
-// console.log("i am " + 20 + " years old");
-// console.log("23" - "10" - "3");
-// console.log("23" * "2");
-// console.log("23" / 2);
+console.log(String(23), 23);
 
-// let n = "1" + 1;
-// n = n - 1;
-// console.log(n); // 11
+// type coercion
+console.log("i am " + 20 + " years old");
+console.log("23" - "10" - "3");
+console.log("23" * "2");
+console.log("23" / 2);
 
-// /////////////// Truthy and falsy values ///////////////
+let n = "1" + 1;
+n = n - 1;
+console.log(n); // 11
 
-// 5 falsy values 0, '', undefined, null, NaN
+/////////////// Truthy and falsy values ///////////////
 
-// console.log(Boolean(null));
-// console.log(Boolean("Ahmad"));
-// console.log(Boolean(undefined));
-// console.log(Boolean(""));
-// console.log(Boolean({}));
-// console.log(Boolean(NaN));
+5 falsy values 0, '', undefined, null, NaN
 
-// const money = 100;
-// if (money) {
-//   console.log("Dont't spend it all ;)");
-// } else {
-//   console.log("you should get a job");
-// }
+console.log(Boolean(null));
+console.log(Boolean("Ahmad"));
+console.log(Boolean(undefined));
+console.log(Boolean(""));
+console.log(Boolean({}));
+console.log(Boolean(NaN));
 
-// let height = 1.8;
-// if (height) {
-//   console.log("YAY height is defined!");
-// } else {
-//   console.log("Heigh is undefined");
-// }
+const money = 100;
+if (money) {
+  console.log("Dont't spend it all ;)");
+} else {
+  console.log("you should get a job");
+}
 
-// ////////// ==(loose) vs ====(tight) //////////
+let height = 1.8;
+if (height) {
+  console.log("YAY height is defined!");
+} else {
+  console.log("Heigh is undefined");
+}
 
-// const age = 18;
+////////// ==(loose) vs ====(tight) //////////
 
-// if (age === 18) {
-//   console.log("You are an adult :D (tight)");
-// } else {
-//   console.log("you are not adult ;)");
-// }
+const age = 18;
 
-// // loose check
-// // sometimes make your code buggy
-// const newAge = "18";
-// if (newAge == 18) {
-//   console.log("you are an adult (loose)");
-// } else {
-//   console.log("you are not adule (loose)");
-// }
+if (age === 18) {
+  console.log("You are an adult :D (tight)");
+} else {
+  console.log("you are not adult ;)");
+}
 
-// const number = Number(prompt("Enter the number"));
+// loose check
+// sometimes make your code buggy
+const newAge = "18";
+if (newAge == 18) {
+  console.log("you are an adult (loose)");
+} else {
+  console.log("you are not adule (loose)");
+}
 
-// // tight check
-// // good practice
-// if (number === 23) {
-//   console.log("23 is a cool number :D");
-// } else if (number == 9) {
-//   console.log("9 is also a cool number");
-// } else {
-//   console.log("the number is neither 23 nor 9");
-// }
+const number = Number(prompt("Enter the number"));
 
-// if (number !== 23) {
-//   console.log("your number is not 23");
-// }
+// tight check
+// good practice
+if (number === 23) {
+  console.log("23 is a cool number :D");
+} else if (number == 9) {
+  console.log("9 is also a cool number");
+} else {
+  console.log("the number is neither 23 nor 9");
+}
 
-// if (number != 23) {
-//   console.log("your number is not 23");
-// }
+if (number !== 23) {
+  console.log("your number is not 23");
+}
 
-////////// logical operator ///////////////
+if (number != 23) {
+  console.log("your number is not 23");
+}
 
-// const isTired = false;
-// const isValidAge = true;
-// const isLicense = true;
+//////// logical operator ///////////////
 
-// if (isTired && isValidAge && isLicense) {
-//   console.log("You are able to drive");
-// } else {
-//   console.log("You should not drive");
-// }
+const isTired = false;
+const isValidAge = true;
+const isLicense = true;
 
-// if (isValidAge || !isLicense) {
-//   console.log("you are able to drive");
-// } else {
-//   console.log("you are not able to drive");
-// }
+if (isTired && isValidAge && isLicense) {
+  console.log("You are able to drive");
+} else {
+  console.log("You should not drive");
+}
 
-// //////// switch statement //////////////
-// const day = "tuesday";
+if (isValidAge || !isLicense) {
+  console.log("you are able to drive");
+} else {
+  console.log("you are not able to drive");
+}
 
-// switch (day) {
-//   case "monday":
-//     console.log("working day");
-//     console.log("learning is fun");
-//     break;
+//////// switch statement //////////////
+const day = "tuesday";
 
-//   case "tuesday":
-//     console.log("learning react is fun");
-//     break;
+switch (day) {
+  case "monday":
+    console.log("working day");
+    console.log("learning is fun");
+    break;
 
-//   case "wednesday":
-//   case "thursday":
-//     console.log("learning node.js");
-//     break;
+  case "tuesday":
+    console.log("learning react is fun");
+    break;
 
-//   case "friday":
-//     console.log("learning blockchain development");
-//     break;
-//   default:
-//     console.log("not a valid day");
-// }
+  case "wednesday":
+  case "thursday":
+    console.log("learning node.js");
+    break;
 
-// ////////////// ternary operator /////////////
+  case "friday":
+    console.log("learning blockchain development");
+    break;
+  default:
+    console.log("not a valid day");
+}
+
+////////////// ternary operator /////////////
 
 const age = 20;
 
@@ -257,3 +257,4 @@ console.log(flag);
 
 // 3
 console.log(`you are ${age >= 18 ? "able" : "not able"} to drive`);
+
