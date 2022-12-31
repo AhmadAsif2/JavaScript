@@ -257,4 +257,3 @@ console.log(flag);
 
 // 3
 console.log(`you are ${age >= 18 ? "able" : "not able"} to drive`);
-

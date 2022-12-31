@@ -54,3 +54,20 @@ switch (day) {
   default:
     console.log("not a valid day");
 }
+
+// Coding challenge 4
+const billValue = 275;
+
+const tip =
+  billValue >= 50 && billValue <= 300 ? billValue * 0.15 : billValue / 0.2;
+
+console.log(`the bill was ${billValue}, the tip
+was ${tip} and the total value ${billValue + tip}`);
+
+const bills = [275, 40, 430];
+
+bills.forEach((element) => {
+  const tip = element >= 50 && element <= 300 ? element * 0.15 : element * 0.2;
+  console.log(`the bill was ${element}, the tip
+was ${tip} and the total value ${element + tip}`);
+});
