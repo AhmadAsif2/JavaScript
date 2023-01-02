@@ -104,3 +104,90 @@ const yearLeftRetirement = (firstName, birthYear) => {
 };
 
 console.log(yearLeftRetirement("Ahmad", 2002));
+
+////////////////////// Arrays ///////////////////
+const friends = ["Ahmad", "Ali", "Bilal"];
+const birthYear = new Array(2002, 2004, 2008);
+
+console.log(friends);
+friends[0] = "Waleed";
+console.log(friends);
+
+console.log(friends.length);
+
+console.log(birthYear);
+
+const firstName = "Ahmad";
+const Ahmad = [firstName, "Asif", 2022 - 2002, "programmer", friends];
+console.log(Ahmad);
+
+const _calcAge = (birthYear) => {
+  return 2022 - birthYear;
+};
+
+// Basic functions
+const newLength = friends.push("Faizan");
+console.log(friends);
+console.log(newLength);
+
+// Add to the begining
+friends.unshift("John");
+console.log(friends);
+
+// Removes the last element
+const poppedElement = friends.pop();
+console.log(poppedElement);
+console.log(friends);
+
+// Removes the first element
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf("Waleed"));
+
+// ES6 method
+console.log(friends.includes("Waleed"));
+console.log(friends.includes("23"));
+
+if (friends.includes("Waleed")) {
+  console.log("You have a friend called waleed");
+}
+
+////////////// Objects ///////////////
+
+// for accessing unstructured data by keys
+// key value pair
+const ahmad = {
+  firstName: "Ahmad",
+  lastName: "Asif",
+  age: 2022 - 2002,
+  job: "programmer",
+  friends: ["John", "Steven", "Michael"],
+};
+
+console.log(ahmad.firstName);
+console.log(ahmad["first" + "Name"]);
+console.log(ahmad["lastName"]);
+
+const nameKey = "Name";
+console.log(ahmad["first" + nameKey]);
+console.log(ahmad["last" + nameKey]);
+
+const interestedIn = prompt(
+  "What do you want to know about ahmad? Choose between firstName, lastName, age, job, friends"
+);
+if (ahmad[interestedIn]) {
+  console.log(ahmad[interestedIn]);
+} else {
+  console.log(
+    "Wrong request!! Choose between firstName, lastName, age, job, friends"
+  );
+}
+
+ahmad.location = "Pakistan";
+ahmad["twitter"] = "@ahmadasif";
+console.log(ahmad);
+
+console.log(
+  `${ahmad.firstName} has ${ahmad.friends.length} friends and his best friend is ${ahmad.friends[2]}`
+);
