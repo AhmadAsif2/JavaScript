@@ -58,6 +58,7 @@ const age2 = calcAge2(2002);
 console.log(age1, age2);
 
 // Arrow functions
+// NOTE Arrow function don't support this keyword
 const calcAge3 = (birthYear) => 2022 - birthYear;
 console.log(calcAge3(2002));
 
@@ -85,3 +86,21 @@ const fruitProcessor = (apples, oranges) => {
 };
 
 console.log(fruitProcessor(2, 4));
+
+const calcAge = (birthYear) => {
+  return 2022 - birthYear;
+};
+
+const yearLeftRetirement = (firstName, birthYear) => {
+  const calcAge1 = calcAge(2002);
+  const retirementAge = 65 - calcAge1;
+
+  if (retirementAge > 0) {
+    console.log(`${firstName} retires in ${retirementAge} years`);
+    return retirementAge;
+  }
+
+  return -1;
+};
+
+console.log(yearLeftRetirement("Ahmad", 2002));
