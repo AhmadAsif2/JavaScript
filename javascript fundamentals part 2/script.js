@@ -234,21 +234,51 @@
 
 // ///////////////////// LOOPS ////////////////////////////
 
-for (let i = 1; i <= 10; i++) {
-  console.log("Repetition ", i);
-}
+// for (let i = 1; i <= 10; i++) {
+//   console.log("Repetition ", i);
+// }
 
-let i = 0;
-while (i <= 5) {
-  console.log("repititon : ", i);
-  i++;
-}
+// let i = 0;
+// while (i <= 5) {
+//   console.log("repititon : ", i);
+//   i++;
+// }
 
-// Nested for loops
-for (let i = 0; i < 3; i++) {
-  console.log("Exercise: ", i);
+// // Nested for loops
+// for (let i = 0; i < 3; i++) {
+//   console.log("Exercise: ", i);
 
-  for (var j = 0; j < 5; j++) {
-    console.log("repetition: ", j);
-  }
-}
+//   for (var j = 0; j < 5; j++) {
+//     console.log("repetition: ", j);
+//   }
+// }
+
+// // Break and continue
+// const arr = [12, 44, 55, 78, 100];
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 44) continue; // skips the 44
+//   console.log(arr[i]);
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 55) {
+//     console.log("Number found at index" + i);
+//     break; // break the entire for loop
+//   }
+// }
+
+// // While loops
+// let rep = 0;
+// while (rep <= 5) {
+//   console.log("Repetition: ", i);
+//   rep++;
+// }
+
+// // Using math library
+// let dice = Math.random() * 6 + 1;
+
+// while (dice !== 6) {
+//   console.log(`You rolled ${dice}`);
+//   dice = Math.trunc(Math.random() * 6 + 1);
+// }
