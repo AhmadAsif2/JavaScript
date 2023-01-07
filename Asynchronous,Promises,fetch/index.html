@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Promises
+      let p = new Promise((resolve, reject) => {
+        let name = "Pedro";
+        if (name === "Ahmad") {
+          resolve("Ahmad was found");
+        } else {
+          reject("Name was not found Name was: " + name);
+        }
+      });
+
+      p.then((message) => {
+        console.log("Success: " + message);
+      })
+        .catch((error) => {
+          console.error(error);
+        })
+        .finally(() => {
+          console.log("PROMISE FINISHED");
+        });
+
+      // Using fetch API promises
+      fetch(
+        " http://www.juju.com/jad/000000001x6rzq?impression_id=GVZtkdmUTgmciJW5Scp_tg"
+      )
+        .then((response) => {
+          console.log(response.json());
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+      // 8 JavaScript Arrays Methods
+      const items = [
+        { name: "Book", price: 30 },
+        { name: "Iphone", price: 1099 },
+        { name: "Ipad", price: 699 },
+        { name: "MacBook Pro", price: 1200 },
+        { name: "Watch", price: 250 },
+        { name: "Chair", price: 599 },
+      ];
+
+      // filter method
+      const filteredItems = items.filter((element) => {
+        return element.price <= 299;
+      });
+
+      console.log(filteredItems);
+
+      // forEach method
+      items.forEach((item) => {
+        console.log(item);
+      });
+
+      // map Method
+      // returns boolean
+      const itemMapped = items.map((item) => {
+        return (item.price *= 2);
+      });
+
+      console.log(itemMapped);
+
+      // reduce Method
+      const totalPricesSum = items.reduce((currSum, element) => {
+        return currSum + element.price;
+      }, 0);
+
+      console.log("$" + totalPricesSum);
+
+      // includes method
+      const includedItem = items.includes("Watch");
+
+      console.log(includedItem);
+    </script>
+  </body>
+</html>
